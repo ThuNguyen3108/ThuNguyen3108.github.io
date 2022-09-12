@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="image/logoBook.png">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/cart.css"
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Thư's BookStore </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Tìm kiếm" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="#" id="loai-sach">Loại sách</href>
+                <ul class="sub-menu">
+                    <li>Tiểu thuyết</li>
+                    <li>Khoa học</li>
+                    <li>Kinh tế</li>
+                    <li>Thần thoại</li>
+                    <li>Tâm lí</li>
+                    <li>Kỹ năng</li>
+                    <li>Trinh thám</li>
+                    <li>Sách thiếu nhi</li>
+                </ul>
+            <a href="#featured">Bán chạy</a>
+            <a href="#arrivals">Đặc sắc</a>
+            <a href="#reviews">Đánh giá</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+<div class="container">
+    <div class="seperate"></div>
+    <section class="products" id="products">
+
+        <h1 class="heading"> <span>Giỏ hàng</span> </h1>
+    
+    <form action="" method="post">
+      <div class="cart-detail">
+        <ul class="cart-detail__book">
+            <!-- <p>Bạn chưa chọn quyển sách nào!</p> -->
+          
+            <li class="cart-detail__book__item">
+              <a><img src = "./image/img-1.jpg"class="cart-detail__book__item__image" alt="">
+              </a>
+              <div class="cart-detail__book__item__info">
+                <a  class="cart-detail__book__item__info__title">
+                 Những giấc mơ ở hiệu sách morisaki
+                </a>
+                <input type="number" hidden id="priceOfBook" value="">
+                <p class="cart-detail__book__item__info__price"></p>
+                <p>Kho: còn 2 quyển</p>
+                <label class="cart-detail__book__item__info__number" for="">Số lượng: <input onchange="onNumOfBookChange()" id="" type="number" value="1" min="1" max="99" name="numOfBook[]"></label>
+              </div>
+            </li>
+            <li class="cart-detail__book__item">
+              <a><img src = "./image/img-2.jpg"class="cart-detail__book__item__image" alt="">
+              </a>
+              <div class="cart-detail__book__item__info">
+                <a  class="cart-detail__book__item__info__title">
+                 Mẹ
+                </a>
+                <input type="number" hidden id="priceOfBook" value="">
+                <p class="cart-detail__book__item__info__price"></p>
+                <p>Kho: còn 2 quyển</p>
+                <label class="cart-detail__book__item__info__number" for="">Số lượng: <input onchange="onNumOfBookChange()" id="" type="number" value="1" min="1" max="99" name="numOfBook[]"></label>
+              </div>
+            </li>
+          
+        </ul>
+        <div class="cart-detail__user-info">
+          <div class="cart-detail__user-info__title">Thông tin nhận hàng</div>
+  
+         
+            <div class="cart-detail__user-info__detail">
+              <input hidden type="text" name="MSKH" value="">
+              <p><b>Tên người nhận: </b></p>
+              <p>Nguyễn Thị Anh Thư</p>
+              <p><b>Số điện thoại:</b></p>
+              <p>0378469470</p>
+              <!-- <div class="cart-detail__user-info__detail__address"> -->
+                <p><b>Địa chỉ: </b></p>
+                <p>An Minh - Kiên Giang</p>
+                <p><b>Tổng tiền:</b></p>
+                 
+                    <!-- <div class="form-select">
+                      <label for="">
+                        <input  type="radio" name="address" id="" value="">
+                      </label>
+                    </div> -->
+                  
+                  <!-- <p style="color: darkorange">Bạn chưa thêm địa chỉ giao hàng, hãy vào trang cá nhân để thêm địa chỉ.</p> -->
+               
+              </div>
+              <div class="cart-detail__user-info__detail__total">
+                
+               
+                <b id="total" class="price"></b>
+              </div>
+              <div class="cart-detail__user-info__detail__total">
+                <button class="btn btn--primary">Đặt hàng</button>
+              </div>
+            </div>
+          
+            <!-- <p style="line-height: 25px;">Bạn chưa đăng nhập, hãy đăng nhập để đặt hàng!</p> -->
+         
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  
+  <script>
+    function onNumOfBookChange() {
+      var total = document.getElementById("total");
+      var totalNumber = 0;
+      if (total != undefined) {
+        for (var i = 0; i < total; i++) {
+          var numOfBook = document.getElementById("numOfBook" + i).value;
+          var priceOfBook = document.getElementById("priceOfBook" + i).value;
+          totalNumber += parseInt(numOfBook) * parseInt(priceOfBook);
+        }
+        total.innerText = new Intl.NumberFormat().format(totalNumber) + "đ";
+      }
+      return;
+    }
+  </script>
+
+<footer id="footer" class="footer container-fluid">
+    <h5 style="font-size: 20px; color: #ec455a;">About me</h5>
+    <img class="footer__avatar" src="image/avatar.jpg">
+    <div class="footer__info">
+      <div>Nguyễn Thị Anh Thư - B1908364
+        <br>
+        Niên luận cơ sở - CT226 Nhóm 07
+      </div>
+      <ul class="footer__info__social">
+        <li><a href="https://www.facebook.com/anhthutralongne" target="_blank"><img src="image/icon-facebook.svg" alt="Facebook icon"></a></li>
+        <li><a href="https://github.com/ThuNguyen3108" target="_blank"><img src="image/icon-github.svg"alt="Github icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BB%8B-anh-th%C6%B0-8b452b20a/" target="_blank"><img src="image/icon-linked.svg" alt="Linked icon"></a></li>
+      </ul>
+      <div class="footer__copyright">
+        Copyright © 2022 Nguyễn Thị Anh Thư
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+
+
+</body>
+</html>

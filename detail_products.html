@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="shortcut icon" href="image/logoBook.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css fsile link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Thư's BookStore </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Tìm kiếm" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="#" id="loai-sach">Loại sách</href>
+                <ul class="sub-menu">
+                    <li>Tiểu thuyết</li>
+                    <li>Khoa học</li>
+                    <li>Kinh tế</li>
+                    <li>Thần thoại</li>
+                    <li>Tâm lí</li>
+                    <li>Kỹ năng</li>
+                    <li>Trinh thám</li>
+                    <li>Sách thiếu nhi</li>
+                </ul>
+            <a href="#featured">Bán chạy</a>
+            <a href="#arrivals">Đặc sắc</a>
+            <a href="#reviews">Đánh giá</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+<section class="container">
+    <div class="seperate"></div>
+    <br><br>
+    <h1 class="heading"> <span>Chi tiết sản phẩm</span> </h1>
+    <div class="book-detail">
+      <img src="./image/img-1.jpg" alt="" class="book-detail__image">
+      <div class="book-detail__info">
+        <div class="book-detail__info__title">Những Giấc Mơ Ở Hiệu Sách Morisaki</div>
+        <div class="book-detail__info__price">Giá: 20$</div>
+        <div class="book-detail__info__detail">
+          <p class="book-detail__info__detail__title">Mã sách: 1</p>
+          <p class="book-detail__info__detail__title">Thể loại: Tiểu thuyết</p>
+          <p class="book-detail__info__detail__title">Kho: 2</p>
+          <!-- <p><?= $data['MSHH'] ?></p>
+          <p><?= $data['TenLoaiHang'] ?></p>
+          <p><?= $data['SoLuongHang'] ?></p> -->
+        </div>
+        <div id="cartButton">
+          
+              <!-- <button  class="btn btn--secondary book-detail__button">Đã thêm vào giỏ</button> -->
+            
+            <button onClick="" class="btn btn--primary book-detail__button">Thêm vào giỏ +</button>
+          
+        </div>
+  
+      </div>
+  
+    </div>
+    <div class="book-detail__content">
+      <p class="book-detail__content__title">Sơ lược sách</p>
+      <p class="book-detail__content__content">Bị người yêu lừa dối, Takako bỏ việc và rơi vào chuỗi ngày ngủ triền miên để trốn tránh nỗi buồn. Thế rồi, một cuộc điện thoại từ người cậu ruột cả 10 năm trời không gặp đã đánh thức cô khỏi cơn mộng mị. Takako đồng ý đến trông hiệu sách nửa buổi giúp cậu chỉ để làm vừa lòng mẹ. Nhưng thật ngoài tưởng tượng, chờ đợi cô là hiệu sách Morisaki cũ kỹ với thế giới của hàng nghìn cuốn sách chứa trong mình cả thời gian và lịch sử. Sách đã chữa lành vết thương trong lòng cô.
+        Và hơn thế nữa, Takako tìm thấy bao nhiêu điều mới mẻ và thú vị mà trước đây cô chưa từng biết đến.Câu chuyện nhẹ nhàng mà sâu lắng, đặc biệt với những ai có sở thích sưu tầm sách cổ.
+        Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>
+    </div>
+  
+    <h3 style="font-size: 25px; font-weight: bold; color: #00BFFF; margin: 20px 0;">Bình luận</h3>
+    <!-- <div class="fb-comments" data-href="http://localhost:8080/B1809424-Trung-BookStore/book/detail/<?= $data['MSHH'] ?>" data-width="100%" data-numposts="5"></div> -->
+  </section>
+  
+  <script>
+    function addToCart(id) {
+      ajax = new XMLHttpRequest();
+      ajax.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          if (this.responseText == "false") {
+            alert("Thêm sách vào giỏ không thành công");
+          } else {
+            document.getElementById("headerCartCount").innerText = this.responseText;
+            document.getElementById("cartButton").innerHTML =
+              `
+            <button onClick="removeInCart(${id})" class="btn btn--secondary book-detail__button">Đã thêm vào giỏ</button>
+            `
+          }
+        }
+      };
+      ajax.open("GET", "<?= DOCUMENT_ROOT ?>/book/addToCart/" + id, true);
+      ajax.send();
+    }
+  
+    function removeInCart(id) {
+      ajax = new XMLHttpRequest();
+      ajax.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          if (this.responseText == "false") {
+            alert("Thêm sách vào giỏ không thành công");
+          } else {
+            document.getElementById("headerCartCount").innerText = this.responseText;
+            document.getElementById("cartButton").innerHTML =
+              `
+            <button onClick="addToCart(${id})" class="btn btn--primary book-detail__button">Thêm vào giỏ +</button>
+            `
+          }
+        }
+      };
+      ajax.open("GET", "<?= DOCUMENT_ROOT ?>/book/removeInCart/" + id, true);
+      ajax.send();
+    }
+  </script>
+
+<footer id="footer" class="footer container-fluid">
+    <h5 style="font-size: 20px; color: #ec455a;">About me</h5>
+    <img class="footer__avatar" src="image/avatar.jpg">
+    <div class="footer__info">
+      <div>Nguyễn Thị Anh Thư - B1908364
+        <br>
+        Niên luận cơ sở - CT226 Nhóm 07
+      </div>
+      <ul class="footer__info__social">
+        <li><a href="https://www.facebook.com/anhthutralongne" target="_blank"><img src="image/icon-facebook.svg" alt="Facebook icon"></a></li>
+        <li><a href="https://github.com/ThuNguyen3108" target="_blank"><img src="image/icon-github.svg"alt="Github icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BB%8B-anh-th%C6%B0-8b452b20a/" target="_blank"><img src="image/icon-linked.svg" alt="Linked icon"></a></li>
+      </ul>
+      <div class="footer__copyright">
+        Copyright © 2022 Nguyễn Thị Anh Thư
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+
+
+</body>
+</html>
